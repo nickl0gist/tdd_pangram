@@ -1,23 +1,24 @@
 # Pangram
 
-Determine if a sentence is a pangram. A pangram (Greek: παν γράμμα, pan gramma,
-"every letter") is a sentence using every letter of the alphabet at least once.
-The best known English pangram is:
+Sprawdż czy dany ciąg znaków jest pangramem. Pangram (z greki: παν γράμμα, pan gramma,
+"wszystkie litery") jest zdaniem zawierjącym wszyskie litery alfabetu.
+Najbardziej znanym poslkim pangramem jest:
+> Pchnąć w tę łódź jeża lub ośm skrzyń fig.
+A angielskim:
 > The quick brown fox jumps over the lazy dog.
 
-The alphabet used consists of ASCII letters `a` to `z`, inclusive, and is case
-insensitive. Input will not contain non-ASCII symbols.
+W tym ćwiczeniu będziemy się posługiwać jedynie literami ASCII, to znaczy od `a`do `z`, włącznie, wez względu na wielkość liter. Ciąg wejściowy nie będzie zawierał znaków poza ASCII, w szczególności polskich znaków diakrytycznych.
 
-# Running the tests
+# Uruchomienie testów
 
-You can run all the tests for an exercise by entering
+Możesz wywołać wszystkie testy pisząć następującą komendę
 
 ```sh
 $ gradle test
 ```
 
-in your terminal.
+w konsoli.
 
-## Source
+## Źródło
 
-Wikipedia [https://en.wikipedia.org/wiki/Pangram](https://en.wikipedia.org/wiki/Pangram)
+Wikipedia [https://pl.wikipedia.org/wiki/Pangram](https://pl.wikipedia.org/wiki/Pangram)
