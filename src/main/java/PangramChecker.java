@@ -3,20 +3,16 @@ import java.util.Set;
 
 public class PangramChecker {
 
-    private final String checker = "abcdefghijklmnopqrstuvwxyz";
-
     public boolean isPangram(String input) {
-
         boolean res = true;
         input = input.toLowerCase();
-
-        for (int i = 0; i < checker.length(); i++) {
-            if(!input.contains(Character.toString(checker.charAt(i)))){
-                res = false;
-                break;
+        Set<Character> set = new HashSet<>();
+        for (int i = 0; i < input.length(); i++) {
+            if (Character.isLetter(input.charAt(i))){
+                set.add(input.charAt(i));
             }
         }
-        return res;
+        return set.size() == 26;
     }
 
 }
