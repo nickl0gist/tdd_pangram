@@ -3,8 +3,10 @@ import java.util.Set;
 
 public class PangramChecker {
 
+    private final String checker = "abcdefghijklmnopqrstuvwxyz";
+
     public boolean isPangram(String input) {
-        String checker = "abcdefghijklmnopqrstuvwxyz";
+
         boolean res = true;
         input = input.toLowerCase();
 
