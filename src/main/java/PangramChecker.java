@@ -4,7 +4,17 @@ import java.util.Set;
 public class PangramChecker {
 
     public boolean isPangram(String input) {
-        throw new UnsupportedOperationException("Delete this line and write your own implementation");
+        String checker = "abcdefghijklmnopqrstuvwxyz";
+        boolean res = true;
+        input = input.toLowerCase();
+
+        for (int i = 0; i < checker.length(); i++) {
+            if(!input.contains(Character.toString(checker.charAt(i)))){
+                res = false;
+                break;
+            }
+        }
+        return res;
     }
 
 }
